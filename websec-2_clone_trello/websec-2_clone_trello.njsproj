@@ -28,10 +28,13 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include=".gitignore">
+    <Content Include="public\index.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="public\index.html">
+    <Content Include="public\script.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\styles.css">
       <SubType>Code</SubType>
     </Content>
     <Content Include="server.js" />

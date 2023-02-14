@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "websec-2_clone_trello",
   "main": "server.js",
+  "start": "node server.js",
   "author": {
     "name": ""
   },

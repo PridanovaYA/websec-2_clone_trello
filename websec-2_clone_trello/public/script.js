@@ -23,5 +23,27 @@ function addTask() {
             }
         })
     })
+
+    cancelBtn.addEventListener('click', () => {
+        textarea.value = ''
+        value = ''
+        form.style.display = 'none'
+        btn.style.display = 'flex'
+    })
+
+    addBtn.addEventListener('click', () => {
+        const newItem = document.createElement('div');
+        newItem.classList.add('list__item');
+        newItem.draggable = true;
+        newItem.textContent = value;
+        lists[0].append(newItem)
+
+        textarea.value = ''
+        value = ''
+        form.style.display = 'none'
+        btn.style.display = 'flex'
+
+    })
 }
 
+addTask();
